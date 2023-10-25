@@ -46,14 +46,15 @@ function TiptapInner() {
   });
 
   return (
-    <>
+    <div className="flex flex-col gap-6">
+      <p>Tiptap Editor</p>
       <div className="flex gap-4 items-start overflow-auto">
         <div>
           <EditorContent editor={editor} />
         </div>
-        <button onClick={() => editor?.commands.setCustomNode()}>Wrap</button>
+        <button onClick={() => editor?.commands.setCustomNode()}>Click</button>
       </div>
-    </>
+    </div>
   );
 }
 
